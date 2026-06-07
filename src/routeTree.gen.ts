@@ -9,12 +9,54 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VolleyballRouteImport } from './routes/volleyball'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as IndoorGamesRouteImport } from './routes/indoor-games'
+import { Route as FootballRouteImport } from './routes/football'
+import { Route as CricketRouteImport } from './routes/cricket'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BasketballRouteImport } from './routes/basketball'
+import { Route as BadmintonRouteImport } from './routes/badminton'
 import { Route as IndexRouteImport } from './routes/index'
 
+const VolleyballRoute = VolleyballRouteImport.update({
+  id: '/volleyball',
+  path: '/volleyball',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndoorGamesRoute = IndoorGamesRouteImport.update({
+  id: '/indoor-games',
+  path: '/indoor-games',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FootballRoute = FootballRouteImport.update({
+  id: '/football',
+  path: '/football',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CricketRoute = CricketRouteImport.update({
+  id: '/cricket',
+  path: '/cricket',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BasketballRoute = BasketballRouteImport.update({
+  id: '/basketball',
+  path: '/basketball',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BadmintonRoute = BadmintonRouteImport.update({
+  id: '/badminton',
+  path: '/badminton',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,37 +67,142 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/badminton': typeof BadmintonRoute
+  '/basketball': typeof BasketballRoute
   '/contact': typeof ContactRoute
+  '/cricket': typeof CricketRoute
+  '/football': typeof FootballRoute
+  '/indoor-games': typeof IndoorGamesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/volleyball': typeof VolleyballRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/badminton': typeof BadmintonRoute
+  '/basketball': typeof BasketballRoute
   '/contact': typeof ContactRoute
+  '/cricket': typeof CricketRoute
+  '/football': typeof FootballRoute
+  '/indoor-games': typeof IndoorGamesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/volleyball': typeof VolleyballRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/badminton': typeof BadmintonRoute
+  '/basketball': typeof BasketballRoute
   '/contact': typeof ContactRoute
+  '/cricket': typeof CricketRoute
+  '/football': typeof FootballRoute
+  '/indoor-games': typeof IndoorGamesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/volleyball': typeof VolleyballRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact'
+  fullPaths:
+    | '/'
+    | '/badminton'
+    | '/basketball'
+    | '/contact'
+    | '/cricket'
+    | '/football'
+    | '/indoor-games'
+    | '/sitemap.xml'
+    | '/volleyball'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact'
-  id: '__root__' | '/' | '/contact'
+  to:
+    | '/'
+    | '/badminton'
+    | '/basketball'
+    | '/contact'
+    | '/cricket'
+    | '/football'
+    | '/indoor-games'
+    | '/sitemap.xml'
+    | '/volleyball'
+  id:
+    | '__root__'
+    | '/'
+    | '/badminton'
+    | '/basketball'
+    | '/contact'
+    | '/cricket'
+    | '/football'
+    | '/indoor-games'
+    | '/sitemap.xml'
+    | '/volleyball'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BadmintonRoute: typeof BadmintonRoute
+  BasketballRoute: typeof BasketballRoute
   ContactRoute: typeof ContactRoute
+  CricketRoute: typeof CricketRoute
+  FootballRoute: typeof FootballRoute
+  IndoorGamesRoute: typeof IndoorGamesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  VolleyballRoute: typeof VolleyballRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/volleyball': {
+      id: '/volleyball'
+      path: '/volleyball'
+      fullPath: '/volleyball'
+      preLoaderRoute: typeof VolleyballRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/indoor-games': {
+      id: '/indoor-games'
+      path: '/indoor-games'
+      fullPath: '/indoor-games'
+      preLoaderRoute: typeof IndoorGamesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/football': {
+      id: '/football'
+      path: '/football'
+      fullPath: '/football'
+      preLoaderRoute: typeof FootballRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cricket': {
+      id: '/cricket'
+      path: '/cricket'
+      fullPath: '/cricket'
+      preLoaderRoute: typeof CricketRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/basketball': {
+      id: '/basketball'
+      path: '/basketball'
+      fullPath: '/basketball'
+      preLoaderRoute: typeof BasketballRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/badminton': {
+      id: '/badminton'
+      path: '/badminton'
+      fullPath: '/badminton'
+      preLoaderRoute: typeof BadmintonRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,7 +217,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BadmintonRoute: BadmintonRoute,
+  BasketballRoute: BasketballRoute,
   ContactRoute: ContactRoute,
+  CricketRoute: CricketRoute,
+  FootballRoute: FootballRoute,
+  IndoorGamesRoute: IndoorGamesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  VolleyballRoute: VolleyballRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
