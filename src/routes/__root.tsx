@@ -113,6 +113,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Sports Point" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Sports Point — Premium Sports Equipment, Madukkarai" },
+      { name: "twitter:title", content: "Sports Point — Premium Sports Equipment, Madukkarai" },
+      { name: "description", content: "Sports Point Premium is a high-end e-commerce website for a leading sports equipment store." },
+      { property: "og:description", content: "Sports Point Premium is a high-end e-commerce website for a leading sports equipment store." },
+      { name: "twitter:description", content: "Sports Point Premium is a high-end e-commerce website for a leading sports equipment store." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/64fc1007-7dd2-404c-a55b-9e2ad9b87758/id-preview-2a0ea513--6d044e92-315f-4162-962b-55629e89cc25.lovable.app-1780809353421.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/64fc1007-7dd2-404c-a55b-9e2ad9b87758/id-preview-2a0ea513--6d044e92-315f-4162-962b-55629e89cc25.lovable.app-1780809353421.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
