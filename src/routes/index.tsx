@@ -3,6 +3,7 @@ import { ArrowRight, MessageCircle, Star, MapPin, Truck, Trophy, ShieldCheck, Sp
 import { useState } from "react";
 import heroImg from "@/assets/hero.jpg";
 import storeImg from "@/assets/store.jpg";
+import founderAsset from "@/assets/founder.jpg.asset.json";
 import { CATEGORIES, SITE, waLink } from "@/lib/site";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
@@ -76,10 +77,60 @@ function Home() {
       <Categories />
       <WhyChoose />
       <Counters />
+      <Founder />
       <Reviews />
       <About />
       <ContactStrip />
     </>
+  );
+}
+
+function Founder() {
+  return (
+    <section className="py-20 sm:py-28 bg-background">
+      <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+        <ScrollReveal>
+          <div className="lg:col-span-2 relative">
+            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-elegant max-w-sm mx-auto">
+              <img
+                src={founderAsset.url}
+                alt="Pradeep Senthilkumar — Founder of Sports Point"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
+            </div>
+            <div className="absolute -bottom-4 -right-4 sm:right-8 lg:right-0 px-4 py-2 rounded-xl bg-accent text-accent-foreground font-display font-extrabold text-sm shadow-glow">
+              Founder
+            </div>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal delay={120}>
+          <div className="lg:col-span-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-accent">
+              Meet The Founder
+            </span>
+            <blockquote className="mt-4 font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl leading-tight text-balance">
+              <span className="text-accent">"</span>Every athlete deserves access to
+              quality equipment. Sports Point was founded to support players of all
+              levels with trusted products, fair pricing, and a commitment to helping
+              the local sports community grow.<span className="text-accent">"</span>
+            </blockquote>
+            <div className="mt-8 flex items-center gap-4">
+              <div className="h-px flex-1 bg-border" />
+              <div className="text-right">
+                <div className="font-display font-extrabold text-lg">
+                  Pradeep Senthilkumar
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  Founder, Sports Point
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+      </div>
+    </section>
   );
 }
 
