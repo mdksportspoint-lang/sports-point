@@ -32,9 +32,9 @@ function Volleyball() {
         subtitle="Tournament-grade volleyballs, nets and support gear to keep you spiking through the match."
         image={img}
       />
-      <ProductSection sport="volleyball" title="Volleyballs" products={["Match Volleyballs", "Training Volleyballs", "Beach Volleyballs", "Junior Volleyballs"]} />
-      <ProductSection sport="volleyball" title="Court & Nets" products={["Nets", "Antennas", "Boundary Lines", "Posts"]} />
-      <ProductSection sport="volleyball" title="Protection & Training" products={["Knee Supports", "Ankle Braces", "Training Equipment", "Accessories"]} />
+      <ProductSection title="Volleyballs" products={["Match Volleyballs", "Training Volleyballs", "Beach Volleyballs", "Junior Volleyballs"]} />
+      <ProductSection title="Court & Nets" products={["Nets", "Antennas", "Boundary Lines", "Posts"]} />
+      <ProductSection title="Protection & Training" products={["Knee Supports", "Ankle Braces", "Training Equipment", "Accessories"]} />
       <ContactStrip />
     </>
   );

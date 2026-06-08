@@ -32,10 +32,10 @@ function Badminton() {
         subtitle="From recreational to tournament play — rackets and gear that match your level of intent."
         image={img}
       />
-      <ProductSection sport="badminton" title="Rackets" products={["Pro Rackets", "Intermediate Rackets", "Beginner Rackets", "Junior Rackets"]} />
-      <ProductSection sport="badminton" title="Shuttlecocks" products={["Feather Shuttlecocks", "Nylon Shuttlecocks", "Training Shuttlecocks", "Tournament Shuttles"]} />
-      <ProductSection sport="badminton" title="Footwear & Bags" products={["Badminton Shoes", "Court Shoes", "Racket Bags", "Backpacks"]} />
-      <ProductSection sport="badminton" title="Accessories" products={["Grip Tapes", "String Reels", "Wristbands", "Accessories"]} />
+      <ProductSection title="Rackets" products={["Pro Rackets", "Intermediate Rackets", "Beginner Rackets", "Junior Rackets"]} />
+      <ProductSection title="Shuttlecocks" products={["Feather Shuttlecocks", "Nylon Shuttlecocks", "Training Shuttlecocks", "Tournament Shuttles"]} />
+      <ProductSection title="Footwear & Bags" products={["Badminton Shoes", "Court Shoes", "Racket Bags", "Backpacks"]} />
+      <ProductSection title="Accessories" products={["Grip Tapes", "String Reels", "Wristbands", "Accessories"]} />
       <ContactStrip />
     </>
   );

@@ -32,12 +32,12 @@ function Indoor() {
         subtitle="Timeless games crafted with care — tournament chess sets and championship carrom boards for every home and club."
         image={img}
       />
-      <ProductSection sport="indoor games"
+      <ProductSection
         title="Chess"
         description="From wooden classics to tournament tournament-grade sets."
         products={["Chess Boards", "Tournament Sets", "Wooden Sets", "Chess Clocks"]}
       />
-      <ProductSection sport="indoor games"
+      <ProductSection
         title="Carrom"
         description="Smooth surfaces, perfect coins, championship feel."
         products={["Carrom Boards", "Tournament Boards", "Coins", "Strikers", "Carrom Powder", "Accessories"]}

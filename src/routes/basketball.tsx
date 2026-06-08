@@ -32,9 +32,9 @@ function Basketball() {
         subtitle="Indoor, outdoor, training — basketballs and gear engineered for performance on every court."
         image={img}
       />
-      <ProductSection sport="basketball" title="Basketballs" products={["Indoor Basketballs", "Outdoor Basketballs", "Training Basketballs", "Junior Basketballs"]} />
-      <ProductSection sport="basketball" title="Footwear" products={["Basketball Shoes", "Training Shoes", "Junior Shoes", "Insoles"]} />
-      <ProductSection sport="basketball" title="Training & Accessories" products={["Training Accessories", "Nets", "Cones", "Ball Pumps"]} />
+      <ProductSection title="Basketballs" products={["Indoor Basketballs", "Outdoor Basketballs", "Training Basketballs", "Junior Basketballs"]} />
+      <ProductSection title="Footwear" products={["Basketball Shoes", "Training Shoes", "Junior Shoes", "Insoles"]} />
+      <ProductSection title="Training & Accessories" products={["Training Accessories", "Nets", "Cones", "Ball Pumps"]} />
       <ContactStrip />
     </>
   );

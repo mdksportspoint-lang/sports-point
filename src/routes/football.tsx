@@ -32,10 +32,10 @@ function Football() {
         subtitle="Match-ready footballs, training gear and goalkeeper essentials for every player on the pitch."
         image={img}
       />
-      <ProductSection sport="football" title="Footballs" products={["Match Footballs", "Training Footballs", "Futsal Balls", "Junior Footballs"]} />
-      <ProductSection sport="football" title="Footwear" products={["Football Studs", "Turf Shoes", "Indoor Shoes", "Junior Studs"]} />
-      <ProductSection sport="football" title="Protection" products={["Shin Guards", "Goalkeeper Gloves", "Ankle Supports", "Knee Pads"]} />
-      <ProductSection sport="football" title="Training & Team" products={["Training Cones", "Jerseys", "Nets", "Accessories"]} />
+      <ProductSection title="Footballs" products={["Match Footballs", "Training Footballs", "Futsal Balls", "Junior Footballs"]} />
+      <ProductSection title="Footwear" products={["Football Studs", "Turf Shoes", "Indoor Shoes", "Junior Studs"]} />
+      <ProductSection title="Protection" products={["Shin Guards", "Goalkeeper Gloves", "Ankle Supports", "Knee Pads"]} />
+      <ProductSection title="Training & Team" products={["Training Cones", "Jerseys", "Nets", "Accessories"]} />
       <ContactStrip />
     </>
   );
