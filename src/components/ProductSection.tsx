@@ -1,18 +1,15 @@
 import { MessageCircle } from "lucide-react";
 import { ScrollReveal } from "./ScrollReveal";
 import { waLink } from "@/lib/site";
-import { productImageUrl } from "@/lib/productImages";
 
 export function ProductSection({
   title,
   description,
   products,
-  sport,
 }: {
   title: string;
   description?: string;
   products: string[];
-  sport: string;
 }) {
   return (
     <section className="py-16 sm:py-20">
