@@ -120,7 +120,7 @@ function Founder() {
               <div className="h-px flex-1 bg-border" />
               <div className="text-right">
                 <div className="font-display font-extrabold text-lg">
-                  Pradeep Senthilkumar
+                  Pradeep Kumar
                 </div>
                 <div className="text-sm text-muted-foreground">
                   Founder, Sports Point
