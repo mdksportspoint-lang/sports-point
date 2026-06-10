@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, MessageCircle, Star, MapPin, Truck, Trophy, ShieldCheck, Sparkles, Users, ThumbsUp, BadgeCheck, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import heroImg from "@/assets/hero.jpg";
-import storeImg from "@/assets/store.jpg";
+import storeImg from "@/assets/shop-trophies.jpg.asset.json";
 import founderAsset from "@/assets/founder.jpg.asset.json";
 import { CATEGORIES, SITE, waLink } from "@/lib/site";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -94,7 +94,7 @@ function Founder() {
             <div className="relative aspect-square rounded-3xl overflow-hidden shadow-elegant max-w-sm mx-auto">
               <img
                 src={founderAsset.url}
-                alt="Pradeep Senthilkumar — Founder of Sports Point"
+                alt="Pradeep Kumar — Founder of Sports Point"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover"
               />
@@ -120,7 +120,7 @@ function Founder() {
               <div className="h-px flex-1 bg-border" />
               <div className="text-right">
                 <div className="font-display font-extrabold text-lg">
-                  Pradeep Senthilkumar
+                  Pradeep Kumar
                 </div>
                 <div className="text-sm text-muted-foreground">
                   Founder, Sports Point
@@ -299,7 +299,7 @@ function WhyChoose() {
 function Counters() {
   const stats = [
     { end: 500, suffix: "+", label: "Happy Customers" },
-    { end: 7, suffix: "", label: "Sports Categories" },
+    { end: 50, suffix: "+", label: "Sports Categories" },
     { end: 1000, suffix: "+", label: "Products Stocked" },
     { end: 47, suffix: "/10", label: "Average Rating" },
   ];
@@ -397,8 +397,8 @@ function About() {
         <ScrollReveal>
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
             <img
-              src={storeImg}
-              alt="Inside Sports Point store"
+              src={storeImg.url}
+              alt="Sports Point store — trophy display case in Madukkarai"
               width={1280}
               height={960}
               loading="lazy"
