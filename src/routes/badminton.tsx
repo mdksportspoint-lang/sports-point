@@ -38,6 +38,17 @@ function Badminton() {
         subtitle="From recreational to tournament play — rackets and gear that match your level of intent."
         image={img}
       />
+      <ProductGallery
+        title="Featured Rackets In Store"
+        description="A glimpse of the Yonex rackets currently stocked at Sports Point — visit us or message on WhatsApp for the full collection."
+        items={[
+          { name: "Yonex Nanoray Neo", image: racket1.url },
+          { name: "Yonex ZR Series", image: racket2.url },
+          { name: "Yonex Voltric Lite", image: racket3.url },
+          { name: "Yonex Nanoray Light 18i", image: racket4.url },
+          { name: "Yonex GR 303", image: racket5.url },
+        ]}
+      />
       <ProductSection title="Rackets" products={["Pro Rackets", "Intermediate Rackets", "Beginner Rackets", "Junior Rackets"]} />
       <ProductSection title="Shuttlecocks" products={["Feather Shuttlecocks", "Nylon Shuttlecocks", "Training Shuttlecocks", "Tournament Shuttles"]} />
       <ProductSection title="Footwear & Bags" products={["Badminton Shoes", "Court Shoes", "Racket Bags", "Backpacks"]} />
