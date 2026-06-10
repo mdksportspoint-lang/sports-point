@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, MessageCircle, Star, MapPin, Truck, Trophy, ShieldCheck, Sparkles, Users, ThumbsUp, BadgeCheck, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import heroImg from "@/assets/hero.jpg";
-import storeImg from "@/assets/shop-trophies.jpg.asset.json";
+import storeImg from "@/assets/store.jpg";
 import founderAsset from "@/assets/founder.jpg.asset.json";
 import { CATEGORIES, SITE, waLink } from "@/lib/site";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -397,7 +397,7 @@ function About() {
         <ScrollReveal>
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
             <img
-              src={storeImg.url}
+              src={storeImg}
               alt="Sports Point store — trophy display case in Madukkarai"
               width={1280}
               height={960}
