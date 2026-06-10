@@ -1,8 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CategoryHero } from "@/components/CategoryHero";
 import { ProductSection } from "@/components/ProductSection";
+import { ProductGallery } from "@/components/ProductGallery";
 import { ContactStrip } from "@/components/ContactStrip";
 import img from "@/assets/badminton.jpg";
+import racket1 from "@/assets/products/racket-yellow.jpg.asset.json";
+import racket2 from "@/assets/products/racket-red-blue.jpg.asset.json";
+import racket3 from "@/assets/products/racket-red-black.jpg.asset.json";
+import racket4 from "@/assets/products/racket-black-blue.jpg.asset.json";
+import racket5 from "@/assets/products/racket-red-classic.jpg.asset.json";
 
 export const Route = createFileRoute("/badminton")({
   head: () => ({
