@@ -1,0 +1,11 @@
+name = "sports-point"
+main = "dist/server/index.js"
+compatibility_date = "2024-01-01"
+type = "service"
+
+[build]
+command = "npm run build"
+cwd = "."
+
+[env.production]
+name = "sports-point-production"
