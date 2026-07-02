@@ -1,7 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CategoryHero } from "@/components/CategoryHero";
 import { ProductSection } from "@/components/ProductSection";
+import { FeaturedProducts } from "@/components/FeaturedProducts";
 import { ContactStrip } from "@/components/ContactStrip";
+import { productsByCategory } from "@/lib/products";
 import img from "@/assets/cricket.jpg";
 
 export const Route = createFileRoute("/cricket")({
@@ -31,6 +33,11 @@ function Cricket() {
         title="Complete Cricket Collection"
         subtitle="From the local maidan to club tournaments — premium cricket gear for every level of the game."
         image={img}
+      />
+      <FeaturedProducts
+        title="Featured Cricket Products"
+        description="Real bats and gear currently available at our Madukkarai store. Tap any product for full photos, details and WhatsApp enquiry."
+        products={productsByCategory("cricket")}
       />
       <ProductSection
         title="Bats"
