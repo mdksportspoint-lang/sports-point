@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VolleyballRouteImport } from './routes/volleyball'
+import { Route as TeamJerseysRouteImport } from './routes/team-jerseys'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as IndoorGamesRouteImport } from './routes/indoor-games'
 import { Route as FootballRouteImport } from './routes/football'
@@ -23,6 +24,11 @@ import { Route as ProductSlugRouteImport } from './routes/product.$slug'
 const VolleyballRoute = VolleyballRouteImport.update({
   id: '/volleyball',
   path: '/volleyball',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeamJerseysRoute = TeamJerseysRouteImport.update({
+  id: '/team-jerseys',
+  path: '/team-jerseys',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -80,6 +86,7 @@ export interface FileRoutesByFullPath {
   '/football': typeof FootballRoute
   '/indoor-games': typeof IndoorGamesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/team-jerseys': typeof TeamJerseysRoute
   '/volleyball': typeof VolleyballRoute
   '/product/$slug': typeof ProductSlugRoute
 }
@@ -92,6 +99,7 @@ export interface FileRoutesByTo {
   '/football': typeof FootballRoute
   '/indoor-games': typeof IndoorGamesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/team-jerseys': typeof TeamJerseysRoute
   '/volleyball': typeof VolleyballRoute
   '/product/$slug': typeof ProductSlugRoute
 }
@@ -105,6 +113,7 @@ export interface FileRoutesById {
   '/football': typeof FootballRoute
   '/indoor-games': typeof IndoorGamesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/team-jerseys': typeof TeamJerseysRoute
   '/volleyball': typeof VolleyballRoute
   '/product/$slug': typeof ProductSlugRoute
 }
@@ -119,6 +128,7 @@ export interface FileRouteTypes {
     | '/football'
     | '/indoor-games'
     | '/sitemap.xml'
+    | '/team-jerseys'
     | '/volleyball'
     | '/product/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -131,6 +141,7 @@ export interface FileRouteTypes {
     | '/football'
     | '/indoor-games'
     | '/sitemap.xml'
+    | '/team-jerseys'
     | '/volleyball'
     | '/product/$slug'
   id:
@@ -143,6 +154,7 @@ export interface FileRouteTypes {
     | '/football'
     | '/indoor-games'
     | '/sitemap.xml'
+    | '/team-jerseys'
     | '/volleyball'
     | '/product/$slug'
   fileRoutesById: FileRoutesById
@@ -156,6 +168,7 @@ export interface RootRouteChildren {
   FootballRoute: typeof FootballRoute
   IndoorGamesRoute: typeof IndoorGamesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TeamJerseysRoute: typeof TeamJerseysRoute
   VolleyballRoute: typeof VolleyballRoute
   ProductSlugRoute: typeof ProductSlugRoute
 }
@@ -167,6 +180,13 @@ declare module '@tanstack/react-router' {
       path: '/volleyball'
       fullPath: '/volleyball'
       preLoaderRoute: typeof VolleyballRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/team-jerseys': {
+      id: '/team-jerseys'
+      path: '/team-jerseys'
+      fullPath: '/team-jerseys'
+      preLoaderRoute: typeof TeamJerseysRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -244,6 +264,7 @@ const rootRouteChildren: RootRouteChildren = {
   FootballRoute: FootballRoute,
   IndoorGamesRoute: IndoorGamesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TeamJerseysRoute: TeamJerseysRoute,
   VolleyballRoute: VolleyballRoute,
   ProductSlugRoute: ProductSlugRoute,
 }

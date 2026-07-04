@@ -11,6 +11,7 @@ const NAV = [
   { to: "/basketball", label: "Basketball" },
   { to: "/badminton", label: "Badminton" },
   { to: "/indoor-games", label: "Indoor" },
+  { to: "/team-jerseys", label: "Jerseys" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
