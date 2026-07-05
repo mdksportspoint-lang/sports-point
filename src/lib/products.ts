@@ -8,6 +8,14 @@ import novax from "@/assets/products/novax-bahubali.jpg.asset.json";
 import maspro from "@/assets/products/maspro-tennis.jpg.asset.json";
 import turbo from "@/assets/products/turbo-tennis.jpg.asset.json";
 import stumps from "@/assets/products/cricket-stumps.jpg.asset.json";
+import coscoB18 from "@/assets/products/cosco-b18.jpg.asset.json";
+import coscoBerlin from "@/assets/products/cosco-berlin.jpg.asset.json";
+import coscoMilano from "@/assets/products/cosco-milano.jpg.asset.json";
+import shiningStar from "@/assets/products/shining-star.jpg.asset.json";
+import niviaTrainer from "@/assets/products/nivia-trainer.jpg.asset.json";
+import niviaSuperSynthetic from "@/assets/products/nivia-super-synthetic.jpg.asset.json";
+import niviaBlueYellow from "@/assets/products/nivia-blue-yellow.jpg.asset.json";
+import niviaClassicVision from "@/assets/products/nivia-classic-vision.jpg.asset.json";
 
 export type ProductCategory =
   | "cricket"
@@ -156,6 +164,134 @@ export const PRODUCTS: Product[] = [
       "Practice & match use",
     ],
     images: [stumps.url],
+  },
+  {
+    slug: "cosco-b18-football-pump",
+    name: "Cosco B-18 Football with Pump",
+    category: "football",
+    categoryLabel: "Footballs",
+    tagline: "Classic black & white match football with pump.",
+    description:
+      "The Cosco B-18 is a classic hand-stitched football in the iconic black-and-white panel design. Made in India, durable synthetic construction — comes bundled with a Cosco hand pump for on-the-go inflation.",
+    highlights: [
+      "Hand-stitched panels",
+      "Comes with Cosco hand pump",
+      "Match & practice ready",
+      "Made in India",
+    ],
+    images: [coscoB18.url],
+  },
+  {
+    slug: "cosco-berlin-football",
+    name: "Cosco Berlin Football",
+    category: "football",
+    categoryLabel: "Footballs",
+    tagline: "Vibrant yellow match ball with striking graphics.",
+    description:
+      "The Cosco Berlin (C-16) is a bright yellow football with bold red, green and black accents. Built for club matches, school teams and enthusiastic weekend players.",
+    highlights: [
+      "Eye-catching Berlin design",
+      "Durable synthetic cover",
+      "Great grip in all weather",
+      "Size 5 match ball",
+    ],
+    images: [coscoBerlin.url],
+  },
+  {
+    slug: "cosco-milano-football",
+    name: "Cosco Milano Football",
+    category: "football",
+    categoryLabel: "Footballs",
+    tagline: "Bold blue Milano — premium look, tournament feel.",
+    description:
+      "The Cosco Milano combines a striking blue-and-white geometric design with a durable stitched build. A favourite for club players who want a football that looks as good as it plays.",
+    highlights: [
+      "Premium Milano graphics",
+      "Machine-stitched durability",
+      "Balanced flight & control",
+      "Suits turf & ground play",
+    ],
+    images: [coscoMilano.url],
+  },
+  {
+    slug: "shining-star-football",
+    name: "Shining Star Football",
+    category: "football",
+    categoryLabel: "Footballs",
+    tagline: "Pro-look football for club and turf matches.",
+    description:
+      "The Shining Star football features a modern orange, blue and white panel design with a durable synthetic surface — great grip and flight on turf and ground pitches.",
+    highlights: [
+      "Modern pro-style design",
+      "Excellent surface grip",
+      "Ideal for turf & ground",
+      "Match-ready size",
+    ],
+    images: [shiningStar.url],
+  },
+  {
+    slug: "nivia-trainer-football",
+    name: "Nivia Trainer Football",
+    category: "football",
+    categoryLabel: "Footballs",
+    tagline: "Trusted Nivia trainer for daily practice.",
+    description:
+      "The Nivia Trainer is built for regular training sessions and club practice. Reinforced stitching and a durable outer cover stand up to daily use on hard grounds.",
+    highlights: [
+      "Reinforced stitched panels",
+      "Durable training cover",
+      "Consistent shape retention",
+      "Perfect for daily practice",
+    ],
+    images: [niviaTrainer.url],
+  },
+  {
+    slug: "nivia-super-synthetic-fb272",
+    name: "Nivia Super Synthetic Football (FB-272)",
+    category: "football",
+    categoryLabel: "Footballs",
+    tagline: "Bright yellow Nivia — Size 5 match ball.",
+    description:
+      "The Nivia Super Synthetic (FB-272) is a Size 5 football with a bright yellow synthetic cover. Made by Freewill Sports — a reliable pick for schools, clubs and enthusiasts.",
+    highlights: [
+      "Size 5 official match ball",
+      "Super synthetic cover",
+      "Hand-stitched durability",
+      "6-8 LBS inflation",
+    ],
+    images: [niviaSuperSynthetic.url],
+  },
+  {
+    slug: "nivia-blue-yellow-football",
+    name: "Nivia Football — Blue & Yellow",
+    category: "football",
+    categoryLabel: "Footballs",
+    tagline: "Vibrant blue & yellow wave-pattern football.",
+    description:
+      "A striking Nivia football in a blue and yellow wave-pattern design. Bright, durable and built for practice sessions and casual matches.",
+    highlights: [
+      "Vibrant wave-pattern design",
+      "Nivia trusted quality",
+      "Durable stitched build",
+      "Practice & casual match ready",
+    ],
+    images: [niviaBlueYellow.url],
+  },
+  {
+    slug: "nivia-classic-vision-fb281",
+    name: "Nivia Classic Vision 2014 (FB-281)",
+    category: "football",
+    categoryLabel: "Footballs",
+    tagline: "Neon yellow & orange — Size 5 Classic Vision.",
+    description:
+      "The Nivia Classic Vision 2014 (FB-281) is a Size 5 football with a bright fluorescent yellow surface and bold orange accents. Excellent visibility, reliable stitching and true Nivia durability.",
+    highlights: [
+      "Fluorescent high-visibility yellow",
+      "Size 5 — 6 to 8 LBS",
+      "Hand-stitched Nivia build",
+      "Great for evening & indoor play",
+    ],
+    images: [niviaClassicVision.url],
   },
 ];
 
