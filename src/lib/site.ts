@@ -31,6 +31,6 @@ export const CATEGORIES = [
   { slug: "basketball", name: "Basketball", emoji: "🏀", to: "/basketball" },
   { slug: "volleyball", name: "Volleyball", emoji: "🏐", to: "/volleyball" },
   { slug: "badminton", name: "Badminton", emoji: "🏸", to: "/badminton" },
-  { slug: "chess", name: "Chess", emoji: "♟️", to: "/indoor-games" },
-  { slug: "carrom", name: "Carrom", emoji: "🎯", to: "/indoor-games" },
+  { slug: "chess", name: "Chess", emoji: "♟️", to: "/chess" },
+  { slug: "carrom", name: "Carrom", emoji: "🎯", to: "/carrom" },
 ] as const;

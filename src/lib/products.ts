@@ -16,6 +16,14 @@ import niviaTrainer from "@/assets/products/nivia-trainer.jpg.asset.json";
 import niviaSuperSynthetic from "@/assets/products/nivia-super-synthetic.jpg.asset.json";
 import niviaBlueYellow from "@/assets/products/nivia-blue-yellow.jpg.asset.json";
 import niviaClassicVision from "@/assets/products/nivia-classic-vision.jpg.asset.json";
+import chessFoldable from "@/assets/products/chess-magnetic-foldable.jpg.asset.json";
+import chessPieces from "@/assets/products/chess-tournament-pieces.jpg.asset.json";
+import chessClock from "@/assets/products/chess-dgt-clock.jpg.asset.json";
+import chessBag from "@/assets/products/chess-carry-bag.jpg.asset.json";
+import carromBoard from "@/assets/products/carrom-board-tournament.jpg.asset.json";
+import carromCoins from "@/assets/products/carrom-wooden-coins.jpg.asset.json";
+import carromStrikers from "@/assets/products/carrom-designer-strikers.jpg.asset.json";
+import carromPowder from "@/assets/products/carrom-powder.jpg.asset.json";
 
 export type ProductCategory =
   | "cricket"
@@ -23,7 +31,10 @@ export type ProductCategory =
   | "basketball"
   | "volleyball"
   | "badminton"
+  | "chess"
+  | "carrom"
   | "indoor-games";
+
 
 export type Product = {
   slug: string;
@@ -293,7 +304,136 @@ export const PRODUCTS: Product[] = [
     ],
     images: [niviaClassicVision.url],
   },
+  {
+    slug: "magnetic-foldable-chess-board",
+    name: "Magnetic Foldable Chess Board",
+    category: "chess",
+    categoryLabel: "Chess Boards",
+    tagline: "Travel-ready magnetic chess with a foldable case.",
+    description:
+      "A premium foldable magnetic chess board designed for travel and casual play. Magnetic pieces stay in place, and the board folds neatly into its own carrying case for easy storage.",
+    highlights: [
+      "Strong magnetic pieces",
+      "Foldable travel design",
+      "Classic wood-grain finish",
+      "Great for beginners & clubs",
+    ],
+    images: [chessFoldable.url],
+  },
+  {
+    slug: "tournament-chess-pieces",
+    name: "Tournament Staunton Chess Pieces",
+    category: "chess",
+    categoryLabel: "Chess Pieces",
+    tagline: "Weighted Staunton pieces for tournament play.",
+    description:
+      "Classic Staunton-style chess pieces in ivory white and rich brown wood finish. Balanced weight, felted bases and premium build — ideal for serious players and clubs.",
+    highlights: [
+      "Staunton tournament design",
+      "Ivory & wood-brown finish",
+      "Weighted with felted bases",
+      "Complete 32-piece set",
+    ],
+    images: [chessPieces.url],
+  },
+  {
+    slug: "dgt-2010-chess-clock",
+    name: "DGT 2010 Digital Chess Clock",
+    category: "chess",
+    categoryLabel: "Chess Clocks",
+    tagline: "FIDE-approved digital timer for serious play.",
+    description:
+      "The DGT 2010 is the official FIDE tournament chess clock — supports every time control from classical to blitz and Bronstein delay. A must-have for rated players and clubs.",
+    highlights: [
+      "FIDE-approved tournament clock",
+      "All standard time controls",
+      "Bronstein & Fischer delay",
+      "Large, clear LCD display",
+    ],
+    images: [chessClock.url],
+  },
+  {
+    slug: "chess-carry-bag",
+    name: "Chess Board Carry Bag",
+    category: "chess",
+    categoryLabel: "Chess Accessories",
+    tagline: "Padded carry bag for board, pieces and clock.",
+    description:
+      "A rugged padded carry bag sized for standard tournament chess boards. Includes handles and a smooth zip closure — protects board, pieces and clock on the way to matches.",
+    highlights: [
+      "Fits standard tournament boards",
+      "Padded protective interior",
+      "Sturdy zip & carry handles",
+      "Perfect for coaching classes",
+    ],
+    images: [chessBag.url],
+  },
+  {
+    slug: "tournament-carrom-board",
+    name: "Tournament Carrom Board",
+    category: "carrom",
+    categoryLabel: "Carrom Boards",
+    tagline: "Full-size tournament carrom with smooth play surface.",
+    description:
+      "A full-size tournament carrom board with a smooth, well-finished playing surface and sturdy hardwood frame. Made in India — perfect for homes, clubs and championship matches.",
+    highlights: [
+      "Tournament size & finish",
+      "Smooth ply playing surface",
+      "Sturdy hardwood frame",
+      "Made in India",
+    ],
+    images: [carromBoard.url],
+  },
+  {
+    slug: "wooden-carrom-coins-set",
+    name: "Wooden Carrom Coins Set",
+    category: "carrom",
+    categoryLabel: "Carrom Coins",
+    tagline: "Classic wooden coins with queen — complete set.",
+    description:
+      "A complete set of hand-finished wooden carrom coins — 9 black, 9 white and 1 red queen. Balanced weight and smooth edges for consistent, controlled play.",
+    highlights: [
+      "9 black + 9 white + 1 queen",
+      "Hand-finished hardwood",
+      "Balanced weight for control",
+      "Standard tournament size",
+    ],
+    images: [carromCoins.url],
+  },
+  {
+    slug: "designer-carrom-strikers",
+    name: "Designer Carrom Strikers",
+    category: "carrom",
+    categoryLabel: "Carrom Strikers",
+    tagline: "Premium designer strikers with vibrant patterns.",
+    description:
+      "A collection of premium designer carrom strikers with beautiful patterns and finishes. Perfect weight and grip for pro-level flicks and accurate shots.",
+    highlights: [
+      "Premium designer patterns",
+      "Tournament-legal weight",
+      "Smooth glide surface",
+      "Great gift for carrom fans",
+    ],
+    images: [carromStrikers.url],
+  },
+  {
+    slug: "carrom-board-powder",
+    name: "Carrom Board Powder",
+    category: "carrom",
+    categoryLabel: "Carrom Accessories",
+    tagline: "Ultra-smooth boric powder for pro-level glide.",
+    description:
+      "High-quality carrom board powder for a fast, smooth playing surface. Even-spread formula improves accuracy and keeps the board glide-ready for hours of play.",
+    highlights: [
+      "Ultra-smooth sliding",
+      "Even-spread formula",
+      "Improves striker accuracy",
+      "Long-lasting performance",
+    ],
+    images: [carromPowder.url],
+  },
 ];
+
 
 export const getProduct = (slug: string) => PRODUCTS.find((p) => p.slug === slug);
 export const productsByCategory = (category: Product["category"]) =>
