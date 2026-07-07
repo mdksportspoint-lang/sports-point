@@ -16,6 +16,7 @@ import { Route as IndoorGamesRouteImport } from './routes/indoor-games'
 import { Route as FootballRouteImport } from './routes/football'
 import { Route as CricketRouteImport } from './routes/cricket'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ChessRouteImport } from './routes/chess'
 import { Route as BasketballRouteImport } from './routes/basketball'
 import { Route as BadmintonRouteImport } from './routes/badminton'
 import { Route as IndexRouteImport } from './routes/index'
@@ -56,6 +57,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ChessRoute = ChessRouteImport.update({
+  id: '/chess',
+  path: '/chess',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BasketballRoute = BasketballRouteImport.update({
   id: '/basketball',
   path: '/basketball',
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/badminton': typeof BadmintonRoute
   '/basketball': typeof BasketballRoute
+  '/chess': typeof ChessRoute
   '/contact': typeof ContactRoute
   '/cricket': typeof CricketRoute
   '/football': typeof FootballRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/badminton': typeof BadmintonRoute
   '/basketball': typeof BasketballRoute
+  '/chess': typeof ChessRoute
   '/contact': typeof ContactRoute
   '/cricket': typeof CricketRoute
   '/football': typeof FootballRoute
@@ -108,6 +116,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/badminton': typeof BadmintonRoute
   '/basketball': typeof BasketballRoute
+  '/chess': typeof ChessRoute
   '/contact': typeof ContactRoute
   '/cricket': typeof CricketRoute
   '/football': typeof FootballRoute
@@ -123,6 +132,7 @@ export interface FileRouteTypes {
     | '/'
     | '/badminton'
     | '/basketball'
+    | '/chess'
     | '/contact'
     | '/cricket'
     | '/football'
@@ -136,6 +146,7 @@ export interface FileRouteTypes {
     | '/'
     | '/badminton'
     | '/basketball'
+    | '/chess'
     | '/contact'
     | '/cricket'
     | '/football'
@@ -149,6 +160,7 @@ export interface FileRouteTypes {
     | '/'
     | '/badminton'
     | '/basketball'
+    | '/chess'
     | '/contact'
     | '/cricket'
     | '/football'
@@ -163,6 +175,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BadmintonRoute: typeof BadmintonRoute
   BasketballRoute: typeof BasketballRoute
+  ChessRoute: typeof ChessRoute
   ContactRoute: typeof ContactRoute
   CricketRoute: typeof CricketRoute
   FootballRoute: typeof FootballRoute
@@ -224,6 +237,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/chess': {
+      id: '/chess'
+      path: '/chess'
+      fullPath: '/chess'
+      preLoaderRoute: typeof ChessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/basketball': {
       id: '/basketball'
       path: '/basketball'
@@ -259,6 +279,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BadmintonRoute: BadmintonRoute,
   BasketballRoute: BasketballRoute,
+  ChessRoute: ChessRoute,
   ContactRoute: ContactRoute,
   CricketRoute: CricketRoute,
   FootballRoute: FootballRoute,
